@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle clap",
+        "command": "clap:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "clap",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "clap:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
