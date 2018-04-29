@@ -15,7 +15,7 @@ describe('Clap', () => {
     activationPromise = atom.packages.activatePackage('clap');
   });
 
-  describe('when the clap:toggle event is triggered', () => {
+  describe('when the clap:save event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
@@ -23,7 +23,7 @@ describe('Clap', () => {
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'clap:toggle');
+      atom.commands.dispatch(workspaceElement, 'clap:save');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -37,7 +37,7 @@ describe('Clap', () => {
 
         let clapPanel = atom.workspace.panelForItem(clapElement);
         expect(clapPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'clap:toggle');
+        atom.commands.dispatch(workspaceElement, 'clap:save');
         expect(clapPanel.isVisible()).toBe(false);
       });
     });
@@ -55,7 +55,7 @@ describe('Clap', () => {
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'clap:toggle');
+      atom.commands.dispatch(workspaceElement, 'clap:save');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -65,7 +65,7 @@ describe('Clap', () => {
         // Now we can test for view visibility
         let clapElement = workspaceElement.querySelector('.clap');
         expect(clapElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'clap:toggle');
+        atom.commands.dispatch(workspaceElement, 'clap:save');
         expect(clapElement).not.toBeVisible();
       });
     });

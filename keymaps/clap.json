@@ -1,5 +1,6 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "clap:toggle"
+    "ctrl-alt-c": "clap:save",
+    "ctrl-alt-x": "clap:load"
   }
 }

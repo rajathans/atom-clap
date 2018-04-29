@@ -2,8 +2,12 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle clap",
-        "command": "clap:toggle"
+        "label": "Clap save",
+        "command": "clap:save"
+      },
+      {
+        "label": "Clap load",
+        "command": "clap:load"
       }
     ]
   },
@@ -12,11 +16,15 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "clap",
+          "label": "Clap",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "clap:toggle"
+              "label": "Save",
+              "command": "clap:save"
+            },
+            {
+              "label": "Load",
+              "command": "clap:load"
             }
           ]
         }
