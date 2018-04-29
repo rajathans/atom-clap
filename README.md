@@ -9,7 +9,7 @@ Save and load the file you were working on git branch-wise.
 - Search for clap and click install
 
 ## How to use?
-- Press `cmd+shift+c` to toggle beaver
+- Press `cmd+shift+c` to toggle clap
 
 ## Found Bugs?
 Report on http://github.com/rajathans/atom-clap/issues
