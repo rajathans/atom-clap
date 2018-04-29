@@ -2,15 +2,25 @@
   "name": "clap",
   "main": "./lib/clap",
   "version": "0.0.0",
-  "description": "A short description of your package",
-  "keywords": [],
+  "description": "Save and load the files you were working on git branch-wise",
+  "keywords": [
+    "git",
+    "atom",
+    "plugin",
+    "package"
+  ],
+  "bugs": "https://github.com/rajathans/atom-clap/issues",
   "activationCommands": {
     "atom-workspace": [
       "clap:save",
       "clap:load"
     ]
   },
-  "repository": "https://github.com/atom/clap",
+  "author": {
+    "name": "Rajat Hans",
+    "email": "rajathans9@gmail.com"
+  },
+  "repository": "https://github.com/rajathans/atom-clap",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
